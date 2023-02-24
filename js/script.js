@@ -13,6 +13,9 @@ function newItem(){
     }
 
     //crossout an item
+    function crossOut(){
+        li.toggleClass('strike');
+    }
 
     li.on ('dblclick', function crossOut(){
         li.toggleClass('strike');
@@ -26,7 +29,7 @@ function newItem(){
     li.append(crossOutButton);
 
     crossOutButton.on('click', deleteListItem);
-    function deletListItem(){
+    function deleteListItem(){
         li.addClass('delete')
     }
     //reorganise items
