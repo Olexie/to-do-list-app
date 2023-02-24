@@ -6,16 +6,16 @@ function newItem(){
     let inputValue = $('#input').val();
     li.append(inputValue);
 
-    if (inpitValue === ''){
+    if (inputValue === ''){
         alert ('you must write something!');
     } else {
         $('#list').append(li);
     }
 
     //crossout an item
-    
+
     li.on ('dblclick', function crossOut(){
-        li.toggleclass('strike');
+        li.toggleClass('strike');
 
     });
 
