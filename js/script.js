@@ -37,4 +37,7 @@ function newItem(){
     $('#list').sortable();
 }
 
-
+function handleSubmit(event){
+    console.log(event);
+    event.preventDefault();
+}
